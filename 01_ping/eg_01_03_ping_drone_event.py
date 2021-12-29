@@ -4,7 +4,6 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-
 def event_ack(ack):
     print("event_ack()")
     print("{0} / {1} / {2:04X}".format(ack.data_type.name, ack.system_time, ack.crc16))
