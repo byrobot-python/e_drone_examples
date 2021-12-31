@@ -18,8 +18,8 @@ if __name__ == '__main__':
     drone.set_event_handler(DataType.STATE, event_state)
 
 
-    # 비행 제어 모드를 ModeControlFlight.POSITION 으로 변경
-    drone.send_mode_control_flight(ModeControlFlight.POSITION)
+    # 비행 제어 모드를 ModeControlFlight.Attitude 으로 변경
+    drone.send_mode_control_flight(ModeControlFlight.ATTITUDE)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -27,8 +27,8 @@ if __name__ == '__main__':
     sleep(0.1)
 
 
-    # 비행 제어 모드를 ModeControlFlight.Attitude 으로 변경
-    drone.send_mode_control_flight(ModeControlFlight.ATTITUDE)
+    # 비행 제어 모드를 ModeControlFlight.POSITION 으로 변경
+    drone.send_mode_control_flight(ModeControlFlight.POSITION)
     sleep(0.01)
 
     # 변경 사항을 확인
