@@ -26,8 +26,8 @@ if __name__ == '__main__':
         
         data.colors    = Colors(random.randint(0, Colors.END_OF_TYPE.value))
 
-        dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     

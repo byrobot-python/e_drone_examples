@@ -28,8 +28,8 @@ if __name__ == '__main__':
         data.color.g    = int(random.randint(0, 255))
         data.color.b    = int(random.randint(0, 255))
 
-        dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     

@@ -16,8 +16,8 @@ if __name__ == '__main__':
         g    = int(random.randint(0, 255))
         b    = int(random.randint(0, 255))
 
-        dataArray = drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, r, g, b)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, r, g, b)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     
